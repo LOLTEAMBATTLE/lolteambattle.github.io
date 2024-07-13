@@ -2,7 +2,7 @@ function loadContent(page) {
     const content = document.getElementById('content');
     
     if (page === 'home') {
-        content.innerHTML = '<h2>환영합니다!</h2><p>이곳은 홈페이지입니다.</p>'
+        content.innerHTML = '<h2>환영합니다!</h2><p>이곳은 홈페이지입니다.123</p>'
         <div class="grid-container">
         <div class="grid-item">Grid Item 1</div>
         <div class="grid-item">Grid Item 2</div>
