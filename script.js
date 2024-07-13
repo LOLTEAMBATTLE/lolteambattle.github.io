@@ -10,7 +10,7 @@ function loadContent(page) {
         <div class="grid-item">Grid Item 4</div>
         <div class="grid-item">Grid Item 5</div>
         <div class="grid-item">Grid Item 6</div>
-        </div>';
+        </div>
     } else if (page === 'regi') {
         content.innerHTML = '<h2>팀등록</h2><p>이 웹사이트는 연습용으로 만들었습니다.</p>';
     }
