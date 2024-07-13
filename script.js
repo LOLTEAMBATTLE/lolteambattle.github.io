@@ -3,14 +3,7 @@ function loadContent(page) {
     
     if (page === 'home') {
         content.innerHTML = '<h2>환영합니다!</h2><p>이곳은 홈페이지입니다.123</p>'
-        <div class="grid-container">
-        <div class="grid-item">Grid Item 1</div>
-        <div class="grid-item">Grid Item 2</div>
-        <div class="grid-item">Grid Item 3</div>
-        <div class="grid-item">Grid Item 4</div>
-        <div class="grid-item">Grid Item 5</div>
-        <div class="grid-item">Grid Item 6</div>
-        </div>
+
     } else if (page === 'regi') {
         content.innerHTML = '<h2>팀등록</h2><p>이 웹사이트는 연습용으로 만들었습니다.</p>';
     }
