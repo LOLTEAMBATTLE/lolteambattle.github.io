@@ -29,6 +29,13 @@ nav a:hover {
     background-color: #555;
 }
 
+aside {
+    padding: 1rem;
+    max-width: 300px;
+    margin: 0 auto;
+    background-color: #555;
+        }
+
 main {
     padding: 2rem;
     max-width: 800px;
