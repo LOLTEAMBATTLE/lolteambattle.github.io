@@ -29,10 +29,17 @@ nav a:hover {
     background-color: #555;
 }
 
+.content-wrapper {
+    display: flex;
+    flex: 1;
+    flex-direction: row; /* 이 부분을 추가합니다 */
+}
+
 aside {
     padding: 5rem;
     max-width: 300px;
     background-color: #fff;
+    flex-shrink: 0;
         }
 
 main {
