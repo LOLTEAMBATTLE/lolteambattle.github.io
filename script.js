@@ -29,7 +29,17 @@ function loadContent(page) {
     } else if (page === 'regi') {
         content.innerHTML = '<h2>팀등록</h2><p>이 웹사이트는 연습용으로 만들었습니다.</p>';
     } else if (page === 'board') {
-        content.innerHTML = '<h2>자유게시판</h2><p>자유롭게 의견을 나누는 공간입니다.</p>';
+        content.innerHTML = '
+            <h2>자유게시판</h2>
+            <div id="posts"></div>
+            <form id="post-form">
+                <input type="text" id="post-title" placeholder="제목" required>
+                <textarea id="post-content" placeholder="내용" required></textarea>
+                <button type="submit">글 작성</button>
+            </form>
+        `;
+        loadPosts();
+        document.getElementById('post-form').addEventListener('submit', addPost);        
     }
 }
 
