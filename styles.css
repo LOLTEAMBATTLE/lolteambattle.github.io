@@ -13,6 +13,12 @@ header {
     padding: 0.3rem;
 }
 
+header h4 {
+    font-size: 28px; /* h4의 글자 크기를 키웁니다 */
+    margin: 0;
+    padding: 10px;
+}
+
 nav {
     background-color: #0054ff;
     padding: 0.3rem;
