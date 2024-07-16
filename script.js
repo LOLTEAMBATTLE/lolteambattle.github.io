@@ -43,6 +43,33 @@ function loadContent(page) {
     }
 }
 
+let posts = [];
+
+function addPost(e) {
+    e.preventDefault();
+    const title = document.getElementById('post-title').value;
+    const content = document.getElementById('post-content').value;
+    const post = { title, content, date: new Date().toLocaleString() };
+    posts.push(post);
+    document.getElementById('post-form').reset();
+    loadPosts();
+}
+
+function loadPosts() {
+    const postsDiv = document.getElementById('posts');
+    postsDiv.innerHTML = '';
+    posts.forEach((post, index) => {
+        const postElement = document.createElement('div');
+        postElement.className = 'post';
+        postElement.innerHTML = `
+            <h3>${post.title}</h3>
+            <p>${post.content}</p>
+            <small>${post.date}</small>
+        `;
+        postsDiv.appendChild(postElement);
+    });
+}
+
 // 페이지 로드 시 초기 컨텐츠 설정
 window.addEventListener('load', () => loadContent('home'));
 
