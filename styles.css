@@ -29,7 +29,6 @@ nav a {
     text-decoration: none;
     padding: 0.5rem 1rem;
     font-weight: bold;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 nav a:hover {
