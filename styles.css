@@ -36,7 +36,7 @@ nav a:hover {
 }
 aside {
     padding: 5rem;
-    max-width: 300px;
+    max-width: 150px;
     background-color: #fff;
     flex-shrink: 0;
     border: 1px solid #ddd;  /* 테두리 추가 */
